@@ -1,0 +1,24 @@
+django-admin startproject api_root .  ## iniciar projeto (. para não criar pastas dentro de pastas)
+
+py manage.py startapp api_rest            ## criação do app
+
+py manage.py makemigrations   # criação do banco
+
+py manage.py createsuperuser # criação do super usuario
+
+py manage.py runserver # rodar aplicação
+
+"""
+serializers.py #utilizado para enviar dados ao frontend via json
+
+.get -> retorna um objeto
+.filter -> retorna um queryset
+.exclude -> retorna um queryset
+
+.save -> salvar
+.delete -> excluir
+"""
+
+http://127.0.0.1:8000/api/ # get all users
+http://127.0.0.1:8000/api/user/silas_ed #get by nickname
+
